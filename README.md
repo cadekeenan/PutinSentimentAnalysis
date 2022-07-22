@@ -1,4 +1,5 @@
 # PutinSentimentAnalysis
+
 **“But if thought corrupts language, language can also corrupt thought.” ― George Orwell, 1984** <br>
 
 More recently, the Russian invasion of Ukraine has been a global trending topic, sparking conversation about what the future may hold in a troubling time for millions of humans.
@@ -67,13 +68,6 @@ We found that there was a positive correlation to the death change and high sent
 
 - Data Sets
 remotes:install_github("EmilHvitfeldt/textdata") <br>
-'textdata' GitHub Package <br>
-install.packages("dplyr") <br>
-install.packages("wordcloud") <br>
-library(tidyverse) <br>
-library(tidytext) <br>
-library(glue) <br>
-library(data.table) <br>
 
 - https://www.statista.com/statistics/1296924/ukraine-war-casualties-daily/
 
@@ -115,7 +109,7 @@ See 'PutinSentAnalysis.R' in 'Code' to see our entire R file with comments on us
 
 
 ## Acknowledgements
-- Many thanks to the inspiration for this project 
+- Many thanks to the inspiration for this project as well as original developers for sharing code
 
 ## Contact
 Created by [@cadekeenan] <br>
