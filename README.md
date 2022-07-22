@@ -39,17 +39,17 @@ Click [here](https://emilhvitfeldt.github.io/textdata/index.html) to see include
 
 - Within the tidytext package, there is access to three different lexicons used to produce different results:
 
--The nrc lexicon categorizes words in a binary fashion (“yes”/“no”) into categories of positive, negative, anger, disgust, fear, joy, sadness, surprise, and trust <br>
+The nrc lexicon categorizes words in a binary fashion (“yes”/“no”) into categories of positive, negative, anger, disgust, fear, joy, sadness, surprise, and trust <br>
 
--The bing lexicon categorizes words in a binary fashion into positive and negative categories <br>
+The bing lexicon categorizes words in a binary fashion into positive and negative categories <br>
 
--The afinn lexicon assigns words with a score that runs between -5 and 5, with negative scores indicating negative sentiment and positive scores indicating positive  sentiment <br>
+The afinn lexicon assigns words with a score that runs between -5 and 5, with negative scores indicating negative sentiment and positive scores indicating positive  sentiment <br>
 
 We chose the nrc lexicon for our overall analysis over the 'afinn' and 'bing' lexicon for various reasons. One main factor being size of the dataset, afinn was only limited to 2,477 English words within the dataset, and bing only 6,786. With nrc, the 13,901 characters made it clear that with an expanded dataset, we would be able to achieve scores with higher accuracy
 
 - After focusing our analysis on the realtionship between Putin's sentiment score and the civilian death toll in Ukraine
 
-We found that there was a positive correlation to the death change and high sentiment score, meaning that in the instances where the civilian death rate had increased, Putin's speeches at that time were drastically increased in postive sentiment **Screenshot 4 for visualization** 
+We found that there was a positive correlation to the death change and high sentiment score, meaning that in the instances where the civilian death rate had increased, Putin's speeches at that time were drastically increased in postive sentiment, April 20th being the strongest outlier **Screenshot 3 for visualization** 
 
 - We wanted to know if there is a specific correlation between outlier scores in public speeches where Putin recieved a negative/positive sentiment score and further acts of aggression upon the democratic state **Screenshots 2 & 3** 
 
@@ -66,14 +66,14 @@ We found that there was a positive correlation to the death change and high sent
 - https://www.tidytextmining.com/sentiment.html
 
 - Data Sets
-remotes:install_github("EmilHvitfeldt/textdata")
-'textdata' GitHub Package
-install.packages("dplyr")
-install.packages("wordcloud")
-library(tidyverse)
-library(tidytext)
-library(glue)
-library(data.table)
+remotes:install_github("EmilHvitfeldt/textdata") <br>
+'textdata' GitHub Package <br>
+install.packages("dplyr") <br>
+install.packages("wordcloud") <br>
+library(tidyverse) <br>
+library(tidytext) <br>
+library(glue) <br>
+library(data.table) <br>
 
 - https://www.statista.com/statistics/1296924/ukraine-war-casualties-daily/
 
@@ -89,25 +89,25 @@ lexicon_nrc() **Most Frequently Used Lexicon**
 ## Screenshots
 We created these visualzations in R and Tableau in order to see if there could be any correlations <br/>
 <br/>
-- **5 month total combined sentiment score to casualties (below)**
+- **SC1 - 5 month total combined sentiment score to casualties (below)**
 ![](screenshots/AllTime1.png) ![](screenshots/AllTime2.png)
-- **Negative sentiment score outliers to civilian death toll (below)**
+- **SC2 - Negative sentiment score outliers to civilian death toll (below)**
 ![](screenshots/NegCor.png)
-- **Positive sentiment score outliers to civilian death toll (below)**
+- **SC3 - Positive sentiment score outliers to civilian death toll (below)**
 ![](screenshots/PositiveCor.png)
-- **Civilian casualty to sentiment score visualization**
+- **SC4 - Civilian casualty to sentiment score visualization**
 ![](screenshots/PutinTableau.png)
-- **text WordCloud from every transcript from the month of February (below)**
+- **SC5 - text WordCloud from every transcript from the month of February (below)**
 ![](screenshots/FebWholeCloud.png) <br>
-- **text WordCloud from every transcript from the month of March (below)**
+- **SC6 - text WordCloud from every transcript from the month of March (below)**
 ![](screenshots/MarchWholeCloud.png) <br>
-- **text WordCloud from every transcript from the month of April (below)**
+- **SC7 - text WordCloud from every transcript from the month of April (below)**
 ![](screenshots/AprilWholeCloud.png) <br>
-- **text WordCloud from every transcript from the month of May (below)**
+- **SC8 - text WordCloud from every transcript from the month of May (below)**
 ![](screenshots/MayCloud.png) <br>
-- **text WordCloud from every transcript from the month of June (below)**
+- **SC9 - text WordCloud from every transcript from the month of June (below)**
 ![](screenshots/JuneCloud.png) <br>
-- **Average change in all data (killed, death change, injured, injured change) to sentiment score (below)**
+- **SC10 - Average change in all data (killed, death change, injured, injured change) to sentiment score (below)**
 ![](screenshots/Data.png) <br>
 
 ## Usage
